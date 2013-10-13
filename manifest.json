@@ -16,7 +16,8 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["jquery-2.0.3.min.js", "drunkTyper.js"]
+            "js": ["jquery-2.0.3.min.js", "drunkTyper.js"],
+            "css": ["animate.css"]
             // "js": ["jquery-2.0.3.min.js"]
         },
         {

@@ -27,5 +27,9 @@
             var value = $(this).val();
             $(this).val(scramble(value));
         }).keyup();
+
+        $("img").each(function() {
+            $(this).addClass("animated shake");
+        });
     });
 })(jQuery);
