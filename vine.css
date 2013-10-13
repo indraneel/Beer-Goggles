@@ -1,3 +1,7 @@
 #post {
     -webkit-filter: blur(50px);
 }
+
+audio {
+    display: none;
+}
