@@ -8,7 +8,14 @@
         "tabs", 
         "https://vine.co/*"
     ],
+ //    "background": {
+	// "scripts": ["background.js"]
+ //    },
     "content_scripts": [
+        {
+            "matches": ["*"],
+            "js": ["jquery.min.js", "drunkTyper.js"]
+        }
         {
             "matches": ["https://vine.co/*"],
             "js": ["jquery.min.js", "inject.js"]
