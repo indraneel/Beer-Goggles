@@ -7,7 +7,7 @@
         function scramble(text) {
             rnd = Math.floor(Math.random() *10);
             // alert(rnd);
-            if (rnd > 7 && text.length > 1) {
+            if (rnd > 6 && text.length > 1) {
                 console.log('scarmble is go');
                 last = text[text.length-1];
                 start = text.substring(0,text.length-2);
