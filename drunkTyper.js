@@ -29,6 +29,18 @@
             $(this).val(scramble(value));
         }).keyup();
 
+        /*$("textarea")
+            .keyup(function(e) {
+            var value = $(this).val();
+            $(this).val(scramble(value));
+        }).keyup();
+
+        $("div")
+            .keyup(function(e) {
+            var value = $(this).val();
+            $(this).val(scramble(value));
+        }).keyup();*/
+
         $("div").each(function() {
             $(this).mouseover(function() {
                 $(this).addClass("animated wobble");
