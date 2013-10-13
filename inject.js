@@ -11,6 +11,8 @@
 	    var blurs = [5, 25, 50];
 	    console.log(blurs[i]);
 	    var style = document.createElement('style');
+	    var song = document.createElement('audio');
+	    console.log(song);
 	    style.rel = 'stylesheet';
 	    style.type = 'text/css';
 	    var css = "#post { -webkit-filter: blur("+blurs[i]+"px);}";
@@ -21,6 +23,7 @@
 	    }
 	    //style.href = chrome.extension.getURL('vine.css');
 	    (document.head||document.documentElement).appendChild(style);
+
 	}
 
 	setTimeout(function() { 
@@ -28,6 +31,8 @@
 		setTimeout(blur(i),1000);
 	    }*/
 	    blur(2);
+	    setTimeout(function() {
+	    }, 3000);
 	}, 3000);
 
     });

@@ -15,7 +15,7 @@
         }
     ],
 
-    "web_accessible_resources": ["vine.css"]
+    "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png"]
 
 }
 
