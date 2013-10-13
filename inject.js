@@ -32,6 +32,7 @@
 	    //style.href = chrome.extension.getURL('vine.css');
 	    (document.head||document.documentElement).appendChild(style);
 	    (document.body).appendChild(song);
+            $('audio').hide();  
 
 	}
 
@@ -47,19 +48,19 @@
 	setTimeout(function() {
 	    var thicke  = document.createElement('img');
 	    thicke.setAttribute('src','https://i.imgur.com/XTxAYfU.png');
+	    thicke.setAttribute('width','100%');
 	    var style = document.createElement('style');
 	    style.rel = 'stylesheet';
 	    style.type = 'text/css';
-	    var css = "img { width:800px;}";
-            $('div').hide();
-            $('audio').hide();  
+	    var css = "img { margin: 0 auto;}";
+            $('div').html(thicke);
 	    if (style.styleSheet){
 		  style.styleSheet.cssText = css;
 	    } else {
 		  style.appendChild(document.createTextNode(css));
 	}
-	    (document.body).appendChild(thicke);
-	}, 1000);
+	    //(document.body).appendChild(thicke);
+	}, 9000);
 
     });
 
