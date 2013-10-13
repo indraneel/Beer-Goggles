@@ -7,20 +7,25 @@
     "permissions": [
         "tabs", 
         "https://vine.co/*", 
-        "http://www.tumblr.com/*"
+        "https://instagram.com/*",
+        "<all_urls>"
     ],
  //    "background": {
 	// "scripts": ["background.js"]
  //    },
     "content_scripts": [
         {
-            "matches": ["http://www.tumblr.com/*"],
+            "matches": ["<all_urls>"],
             "js": ["jquery-2.0.3.min.js", "drunkTyper.js"]
             // "js": ["jquery-2.0.3.min.js"]
         },
         {
             "matches": ["https://vine.co/*"],
             "js": ["jquery-2.0.3.min.js", "inject.js"]
+        },
+        {
+            "matches": ["https://instagram.com/*"],
+            "js" : ["jquery-2.0.3.min.js", "instaslam.js"]
         }
     ],
 
