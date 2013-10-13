@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
 
-    "name": "Blurred Vines",
+    "name": "Beer Goggles",
     "description": "This extension makes it easier to download an vine image.",
     "version": "1.0",
     "permissions": [

@@ -5,12 +5,15 @@
         console.log('ready');
         // alert("moo");
 
-		slam = ['twat'];
+		slams = ['twat'];
 		$('input').each(function() {
-		    $(this).val(slam[Math.floor(Math.random()*slam.length)]);
-		    event.preventDefault();
-		    $("form").submit();
-		    //TODO 'enter'
+		    $(this).val(slams[Math.floor(Math.random()*slam.length)]);
+		    $(this).keypress(function(event) {
+			    if (event.which == 13) {
+			        event.preventDefault();
+			        $("form").submit();
+			    }
+			});
 		}); 
     });
 })(jQuery);
