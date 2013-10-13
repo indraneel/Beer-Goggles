@@ -6,23 +6,25 @@
     "version": "1.0",
     "permissions": [
         "tabs", 
-        "https://vine.co/*"
+        "https://vine.co/*", 
+        "http://www.tumblr.com/*"
     ],
  //    "background": {
 	// "scripts": ["background.js"]
  //    },
     "content_scripts": [
         {
-            "matches": ["*"],
-            "js": ["jquery.min.js", "drunkTyper.js"]
-        }
+            "matches": ["http://www.tumblr.com/*"],
+            "js": ["jquery-2.0.3.min.js", "drunkTyper.js"]
+            // "js": ["jquery-2.0.3.min.js"]
+        },
         {
             "matches": ["https://vine.co/*"],
-            "js": ["jquery.min.js", "inject.js"]
+            "js": ["jquery-2.0.3.min.js", "inject.js"]
         }
     ],
 
-    "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png"]
+    "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png", "jquery-2.0.3.min.map"]
 
 }
 
