@@ -5,7 +5,7 @@
         console.log('ready');
         // alert("moo");
 
-		slams = ['twat', 'douchcanoe', 'shithead', 'dumass', 'dick', 'asshat', 'ass toupee', 'Goober', 'DINKLEBERG!'];
+		slams = ['twat', 'douchcanoe', 'shithead', 'dumass', 'dick', 'asshat', 'ass toupee', 'Goober', 'DINKLEBERG!', 'I hate u'];
 		$('input').each(function() {
 		    $(this).val(slams[Math.floor(Math.random()*slams.length)]);
 		    $(this).keypress(function(event) {
