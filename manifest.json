@@ -8,6 +8,7 @@
         "tabs", 
         "https://vine.co/*", 
         "https://instagram.com/*",
+        "https://facebook.com/*",
         "<all_urls>"
     ],
  //    "background": {
@@ -30,12 +31,13 @@
         },
         {
             "matches": ["https://facebook.com/*"],
-            "js": ["jquery-2.0.3.min.js", "facebookhot.js"]
+            "js": ["facebookhot.js"]
         }
 
     ],
 
-    "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png", "jquery-2.0.3.min.map"]
+    "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png", "jquery-2.0.3.min.map", "jquery-2.0.3.min.js"]
+    // "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png", "jquery-2.0.3.min.map"]
 
 }
 
