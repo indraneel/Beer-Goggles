@@ -1,18 +1,21 @@
 {
     "manifest_version": 2,
 
-    "name": "Instagramarator",
-    "description": "This extension makes it easier to download an Instagram image.",
+    "name": "Blurred Vines",
+    "description": "This extension makes it easier to download an vine image.",
     "version": "1.0",
     "permissions": [
         "tabs", 
-        "http://instagram.com/*"
+        "https://vine.co/*"
     ],
     "content_scripts": [
         {
-            "matches": ["http://instagram.com/*"],
+            "matches": ["https://vine.co/*"],
             "js": ["jquery.min.js", "inject.js"]
         }
-    ]
+    ],
+
+    "web_accessible_resources": ["vine.css"]
+
 }
 
