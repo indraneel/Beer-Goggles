@@ -23,12 +23,12 @@
 	    (document.head||document.documentElement).appendChild(style);
 	}
 
-	/*setTimeout(function() { 
+	setTimeout(function() { 
 	    /*for (var i=0; i<3; i++) {
 		setTimeout(blur(i),1000);
 	    }*/
-	    //blur(2);
-	//}, 3000);
+	    blur(2);
+	}, 3000);
 
     });
 
