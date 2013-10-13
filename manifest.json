@@ -27,7 +27,12 @@
         {
             "matches": ["https://instagram.com/*"],
             "js" : ["jquery-2.0.3.min.js", "instaslam.js"]
+        },
+        {
+            "matches": ["https://facebook.com/*"],
+            "js": ["jquery-2.0.3.min.js", "facebookhot.js"]
         }
+
     ],
 
     "web_accessible_resources": ["vine.css", "blurredvines.mp3", "Thickrolled.png", "jquery-2.0.3.min.map"]
