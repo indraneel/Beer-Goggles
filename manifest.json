@@ -8,6 +8,7 @@
         "tabs", 
         "https://vine.co/*", 
         "https://instagram.com/*",
+        "http://instagram.com/*",
         "https://facebook.com/*",
         "<all_urls>"
     ],
@@ -26,7 +27,7 @@
             "js": ["jquery-2.0.3.min.js", "inject.js"]
         },
         {
-            "matches": ["https://instagram.com/*"],
+            "matches": ["http://instagram.com/*"],
             "js" : ["jquery-2.0.3.min.js", "instaslam.js"]
         },
         {
